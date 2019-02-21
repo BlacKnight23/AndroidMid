@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Debut</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+
+<style type="text/css">
+
+
+
+#m1:hover
+       
+  {
+      -webkit-transform: scale(0.8);
+       -ms-transform: scale(0.8);
+       transform: scale(0.8);
+       transition:all 0.3s ease;
+  }
+        
+
+
+    
+
+*{
+
+  font-family: 'Raleway', sans-serif;
+  
+}
+ #title {
+
+
+  font-color: white;
+}
+
+
+  #bdy {
+  /* The image used */
+  background-image: url("pages/images/bg.jpg");
+
+  /* Add the blur effect */
+  
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.list{
+ background-color: transparent;
+
+}
+
+
+
+
+
+
+.popup{
+  background: transparent url("pages/images/bg.jpg") no-repeat 0 0;
+
+
+}
+
+
+.demo-card-header-pic .card-header {
+  height: 85vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.demo-card-header-pic .card-content-padding .date{
+  color: #8e8e93;
+}
+
+
+
+  #m1 {
+  border-radius: 25px;
+  transition:all 0.3s ease;
+  
+}
+
+/* A bit of demo styles */;
+
+.demo-swiper .swiper-slide {
+  box-sizing: border-box;
+  
+}
+
+
+
+.demo-swiper.demo-swiper-auto .swiper-slide {
+  width: 65%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(2n) {
+  width: 65%;
+}
+.demo-swiper.demo-swiper-auto .swiper-slide:nth-child(3n) {
+  width: 65%;
+
+
+
+</style>
+
+<body id="bdy">
+    <div id="app">
+        <!-- Statusbar overlay -->
+        
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="home" class="page">
+    
+
+        
+                <!-- Toolbar -->
+               
+        
+                <!-- Scrollable page content -->
+              
+
+                <div class="page-content" id="bdy" >
+                      <div id="content" >
+                    
+
+                    
+                     <br>
+                    <center> <img  src="pages/images/date.png" width="80%"  ></center>
+                     
+
+
+
+                          <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" data-slides-per-view="auto" data-centered-slides="true" class="swiper-container swiper-init demo-swiper demo-swiper-auto">
+                                  <div class="swiper-pagination"></div>
+                                  <div class="swiper-wrapper">
+                                     <a class="link popup-open" href="#" data-popup=".popup-person"> <div class="swiper-slide"><img class="elevation-6" src="pages/images/c1.png" width="100%" id="m1" ></a></div>
+                                    
+                                     <a class="link popup-open" href="#" data-popup=".popup-program"> <div class="swiper-slide"><img class="elevation-6" src="pages/images/c6.png" width="100%" id="m1" ></a></div>
+                                    
+                                     <a href="/place/" class="link back"> <div class="swiper-slide"><img class="elevation-6" src="pages/images/c2.png" width="100%" id="m1"></a></div>
+                                     
+                                     <a class="link popup-open" href="#" data-popup=".popup-food"> <div class="swiper-slide"><img class="elevation-6" src="pages/images/c4.png" width="100%" id="m1"></a></div>
+                                    
+
+                                     <a class="pb-standalone-dark" href="#"  onclick="pb()"> <div class="swiper-slide"><img class="elevation-6" src="pages/images/c3.png" width="100%" id="m1"></a></div>
+                                   
+                                    <div class="swiper-slide"> 
+                                     <a  class="link popup-open" href="#" data-popup=".popup-eighteen"> <img class="elevation-6" src="pages/images/c5.png" width="100%" id="m1"></a></div>
+                                  </div>
+                                </div> 
+
+                                 
+
+                               
+
+                                
+<br>
+                                
+    </div>
+
+    
+
+
+     <div class="popup popup-person "  >
+    <div class="page-content block  " >
+    
+
+       
+         <p><a class="link popup-close" href="#">Close </a></p>
+      
+      
+    <p id="title"><h2><center><font color="white">MITSUHA MIYAMIZU</font> </center></h2></p>
+
+
+            <div class="card demo-card-header-pic">
+        <div style="background-image:url(pages/images/m2.jpg)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">Mitsuha is a kind, caring, organized and supportive girl who is also determined and sometimes persistent, frank, as well as adventurous.</p>
+    
+  </div>
+        
+        </div>
+      
+
+
+       <div class="card demo-card-header-pic">
+        <div style="background-image:url(pages/images/m1.jpg)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">She appreciates every small thing in his life and makes the best out of it.</p>
+    
+  </div>
+        
+        </div>
+
+        <br>
+         <br>
+          <br>
+      </div>
+  
+    </div>
+
+<div class="popup popup-program "  >
+    <div class="page-content block  " >
+    
+
+       
+         <p><a class="link popup-close" href="#">Close </a></p>
+      
+      
+    <p id="title"><h2><center><font color="white">Programme</font></center></h2></p>
+
+
+            <div class="card demo-card-header-pic">
+        <div style="background-image:url(images/1a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"It is not in the stars to hold our destiny but in ourselves."</p>
+    
+  </div>
+        
+        </div>
+
+
+        <div class="card demo-card-header-pic">
+        <div style="background-image:url(images/2a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"There's no night without stars"</p>
+    
+  </div>
+        
+        </div>
+
+        <div class="card demo-card-header-pic">
+        <div style="background-image:url(images/3a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"Keep your eyes on the stars, and your feet on the ground."</p>
+    
+  </div>
+        
+        </div><div class="card demo-card-header-pic">
+        <div style="background-image:url(images/4a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"It is not in the stars to hold our destiny but in ourselves."</p>
+    
+  </div>
+        
+        </div><div class="card demo-card-header-pic">
+        <div style="background-image:url(images/5a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"We are all of us stars, and we deserve to twinkle."</p>
+    
+  </div>
+        
+        </div><div class="card demo-card-header-pic">
+        <div style="background-image:url(images/6a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"Shoot for the moon and if you miss you will still be among the stars."</p>
+    
+  </div>
+        
+        </div><div class="card demo-card-header-pic">
+        <div style="background-image:url(images/7a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"The stars don't look bigger, but they do look brighter."</p>
+    
+  </div>
+        
+        </div><div class="card demo-card-header-pic">
+        <div style="background-image:url(images/8a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"The sky is filled with stars, invisible by day."</p>
+    
+  </div>
+        
+        </div><div class="card demo-card-header-pic">
+        <div style="background-image:url(images/9a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"Love knows not distance; it hath no continent; its eyes are for the stars."</p>
+    
+  </div>
+        
+        </div><div class="card demo-card-header-pic">
+        <div style="background-image:url(images/10a.png)" class="card-header align-items-flex-end"></div>
+         <div class="card-content card-content-padding">
+    <p class="date">"Reach for the stars."</p>
+    
+  </div>
+        
+        </div>
+
+
+
+
+        <br>
+         <br>
+          <br>
+      </div>
+  
+    </div>
+
+
+
+
+  
+  
+    <div class="popup popup-food "  >
+    <div class="page-content block  " >
+    
+
+       
+         <p><a class="link popup-close" href="#">Close </a></p>
+      
+      
+    <p id="title"><h2><center><font color="white">Clothes</font></center></h2></p>
+
+
+            <div class="card demo-card-header-pic">
+        <div style="background-image:url(pages/images/ct1.jpg)" class="card-header align-items-flex-end">Men</div>
+         <div class="card-content card-content-padding">
+    <p class="date">Tuxedo, Brown or Black Shoes</p>
+    
+  </div>
+        
+        </div>
+      
+
+
+       <div class="card demo-card-header-pic">
+        <div style="background-image:url(pages/images/ct2.jpg)" class="card-header align-items-flex-end">Women</div>
+         <div class="card-content card-content-padding">
+    <p class="date">Dress, Strapless, Braless</p>
+    
+  </div>
+        
+        </div>
+
+        <br>
+         <br>
+          <br>
+      </div>
+      
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+    <div class="popup popup-eighteen "  >
+    <div class="page-content block  " >
+    
+
+       
+         <p><a class="link popup-close" href="#">Close </a></p>
+      
+      
+    <p id="title"><h2><center><font color="white">Eighteen</font></center></h2></p>
+      <!-- Close Popup -->
+                 
+    <div class="list simple-list" >
+      <div class="card ">
+         <div class="card-content card-content-padding">
+      <ul>
+        <li class="list-group-title">Roses</li>
+        <li>Toshiki Miyamizu</li>
+        <li>Itachi Uchiha</li>
+        <li>Lelouch Lamperouge</li>
+        <li>Light Yagami</li>
+        <li>Monkey D. Luffy</li>
+        <li>Edward Elric</li>
+        <li>Roy Mustang</li>
+        <li>Spike Spiegel</li>
+        <li>Kenshin Himura</li>
+        <li>Sesshomaru</li>
+        <li>Li Shao Ran</li>
+        <li>Ciel Phantomhive</li>
+        <li>Shinya Kogami</li>
+        <li>Allen Walker</li>
+        <li>Tsunayoshi Sawada</li>
+        <li>Kirigaya Kazuto</li>
+        <li>Killua Zoldyk</li>
+        <li>Gon Freecss</li>
+       
+      </ul>
+    </div>
+    </div>
+
+
+  <div class="card">
+         <div class="card-content card-content-padding">
+       <ul>
+        <li class="list-group-title">Candles</li>
+        <li>Yotsuha Miyamizu</li>
+        <li>Asuna Yuuki</li>
+        <li>Chitoge Kirisaki</li>
+        <li>Inori Yuzuriha</li>
+        <li>Kuronuma Sawako</li>
+        <li>Hinata Hyuga</li>
+        <li>Kurumi Tokisaki</li>
+        <li>Boa Hancock</li>
+        <li>Winry Rockbell</li>
+        <li>Mikasa Ackerman</li>
+        <li>Kallen Kozuki</li>
+        <li>Erza Scarlet</li>
+        <li>Taiga Aisaka</li>
+        <li>Ayuzawa Misaki</li>
+        <li>C.C.</li>
+        <li>Rin Tosaka</li>
+        <li>Yuno Gasai</li>
+        <li>Haruhi Fujioka</li>
+       
+      </ul>
+
+ </div>
+    </div>
+
+  <div class="card">
+         <div class="card-content card-content-padding">
+       <ul>
+        <li class="list-group-title">Bills / Treasures</li>
+        <li>Lara Croft</li>
+        <li>Ezio Auditore</li>
+        <li>Kid Icarus</li>
+        <li>Princess Zelda</li>
+        <li>Agent 47</li>
+        <li>Kratos</li>
+        <li>Cloud Strife</li>
+        <li>Geralt of Rivia</li>
+        <li>Princess Peach</li>
+        <li>Link</li>
+        <li>Sailor Moon</li>
+        <li>Nagisa Furumawa</li>
+        <li>Shiro no game no lyf</li>
+        <li>Yuri angel beats</li>
+        <li>Yuri Nakamura</li>
+        <li>Juvia Lockser</li>
+        <li>Sinon</li>
+        <li>Sakura Kinomoto</li>
+       
+      </ul>
+
+ </div>
+    </div>
+
+  <div class="card">
+         <div class="card-content card-content-padding">
+      <ul>
+        <li class="list-group-title">Shots</li>
+       <li> Minato Namikaze </li>
+        <li>  Maes Hughes </li>
+        <li>  Shiro Fujimoto </li>
+        <li>  Kakashi Hatake </li>
+        <li>  Levi Ackerman </li>
+        <li>  Portgas D Ace </li>
+        <li>  Hitoha Miyamizu </li>
+        <li>  Sayaka Natori </li>
+        <li>  Katsuhiko Tessie Teshigawara </li>
+        <li>  Yukari Yukino </li>
+        <li>  Miki Okudera </li>
+        <li>  Tsukasa Fuji </li>
+        <li>  Shinta Takagi </li>
+        <li>  Tanya Degreuchaff </li>
+        <li>  Shota Ishida </li>
+        <li>  Shoko Nishimiya </li>
+        <li>  Naoka Ueno </li>
+        <li>  Miyoko Sahara </li>
+       
+      </ul>
+
+ </div>
+    </div>
+
+ <br>
+    </div>
+    
+
+
+
+                                  
+
+
+                </div>
+
+
+                
+            </div>
+        </div>
+      </div>
+    </div>
+     <script type="text/javascript">
+  
+
+  var app = new Framework7();
+
+var $$ = Dom7;
+
+
+
+
+
+
+
+// DOM events for About popup
+$$('.popup-food').on('popup:open', function (e, popup) {
+  console.log('About popup open');
+
+
+$$('.popup-person').on('popup:open', function (e, popup) {
+  console.log('About popup open');
+
+$$('.popup-program').on('popup:open', function (e, popup) {
+  console.log('About popup open');
+
+$$('.popup-menu').on('popup:open', function (e, popup) {
+  console.log('About popup open');
+
+
+});
+$$('.popup-eighteen').on('popup:opened', function (e, popup) {
+  console.log('About popup opened');
+
+
+
+// Loading flag
+var allowInfinite = true;
+
+// Last loaded index
+var lastItemIndex = $$('.list li').length;
+
+// Max items to load
+var maxItems = 200;
+
+// Append items per load
+var itemsPerLoad = 20;
+
+// Attach 'infinite' event handler
+$$('.infinite-scroll-content').on('infinite', function () {
+  // Exit, if loading in progress
+  if (!allowInfinite) return;
+
+  // Set loading flag
+  allowInfinite = false;
+
+  // Emulate 1s loading
+  setTimeout(function () {
+    // Reset loading flag
+    allowInfinite = true;
+
+    if (lastItemIndex >= maxItems) {
+      // Nothing more to load, detach infinite scroll events to prevent unnecessary loadings
+      app.infiniteScroll.destroy('.infinite-scroll-content');
+      // Remove preloader
+      $$('.infinite-scroll-preloader').remove();
+      return;
+    }
+
+    // Generate new items HTML
+    var html = '';
+    for (var i = lastItemIndex + 1; i <= lastItemIndex + itemsPerLoad; i++) {
+      html += '<li>Item ' + i + '</li>';
+    }
+
+    // Append new items
+    $$('.list ul').append(html);
+
+    // Update last loaded index
+    lastItemIndex = $$('.list li').length;
+  }, 1000);
+});
+
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/dom7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+   
+</body>
+
+</html>

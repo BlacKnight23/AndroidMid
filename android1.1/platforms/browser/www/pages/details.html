@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Debut</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<style type="text/css">
+
+
+
+#m1:hover
+       
+  {
+      -webkit-transform: scale(0.8);
+       -ms-transform: scale(0.8);
+       transform: scale(0.8);
+       transition:all 0.3s ease;
+  }
+        
+
+
+    
+
+* {
+  font-family: Raleway;
+  src: url(https://fonts.googleapis.com/css?family=Raleway);
+  
+}
+
+#img1 {
+   background-image: url('/lib/images/1a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms;
+   transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg);
+   z-index: 1;
+}
+
+#img1a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img1b {
+   opacity: 0;transition-duration: 0ms; 
+}
+
+#img2 {
+   background-image: url('/lib/images/2a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -100.051px) 
+   rotateX(0deg) rotateY(-50.0256deg); 
+   z-index: 0;
+}
+
+#img2a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img2b {
+   opacity: 1.00051; transition-duration: 0ms; 
+}
+
+#img3 {
+   background-image: url('/lib/images/3a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -200.103px) 
+   rotateX(0deg) rotateY(-100.051deg); 
+   z-index: -1;
+}
+
+#img3a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img3b {
+   opacity: 2.00103; transition-duration: 0ms; 
+}
+
+#img4 {
+   background-image: url('/lib/images/4a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -300.154px)  
+   rotateX(0deg) rotateY(-150.077deg); 
+   z-index: -2;
+}
+
+#img4a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img4b {
+   opacity: 3.00154;  transition-duration: 0ms; 
+}
+
+#img5 {
+   background-image: url('/lib/images/5a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -399.795px) 
+   rotateX(0deg) rotateY(-199.897deg); 
+   z-index: -3;
+}
+
+#img5a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img5b {
+   opacity: 3.99795;  transition-duration: 0ms; 
+}
+
+#img6 {
+   background-image: url('/lib/images/6a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -499.846px) 
+   rotateX(0deg) rotateY(-249.923deg); 
+   z-index: -4
+}
+
+#img6a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img6b {
+   opacity: 4.99846;  transition-duration: 0ms; 
+}
+
+#img7 {
+   background-image: url('/lib/images/7a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -599.897px) 
+   rotateX(0deg) rotateY(-299.949deg); 
+   z-index: -5
+}
+
+#img7a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img7b {
+   opacity: 5.99897;  transition-duration: 0ms; 
+}
+
+#img8 {
+   background-image: url('/lib/images/8a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -699.949px) 
+   rotateX(0deg) rotateY(-349.974deg); 
+   z-index: -6
+}
+
+#img8a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img8b {
+   opacity: 6.99949;  transition-duration: 0ms; 
+}
+
+#img9 {
+   background-image: url('/lib/images/9a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -800px) 
+   rotateX(0deg) rotateY(-400.001deg); 
+   z-index: -7
+}
+
+#img9a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img9b {
+   opacity: 8;  transition-duration: 0ms; 
+}
+
+#img10 {
+   background-image: url('/lib/images/10a.png');
+   background-repeat:no-repeat;
+   background-size:contain;
+   height:370px;width:370px;
+   transition-duration: 0ms; 
+   transform: translate3d(0px, 0px, -800px) 
+   rotateX(0deg) rotateY(-400deg); 
+   z-index: -7
+}
+
+#img10a {
+   opacity: 0;transition-duration: 0ms; 
+}
+#img10b {
+   opacity: 9;  transition-duration: 0ms; 
+}
+
+#move{
+  transition-duration: 0ms; transform: translate3d(65.5625px, 0px, 0px); perspective-origin: 121.938px 50%;
+}
+
+#bdy {
+  /* The image used */
+  background-image: url("lib/images/bg.jpg");
+
+  /* Add the blur effect */
+  
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  #m1 {
+  border-radius: 25px;
+  transition:all 0.3s ease;
+  
+}
+
+</style>
+
+<body id="bdy">
+    <div id="app">
+        <!-- Statusbar overlay -->
+        
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="home" class="page">
+    
+
+        
+                <!-- Toolbar -->
+               
+        
+                <!-- Scrollable page content -->
+              
+
+                <div class="page-content" id="bdy" >  
+                     <br>                     
+                          <div data-pagination="{"el": ".swiper-pagination"}" data-effect="coverflow" data-slides-per-view="auto" data-centered-slides="true" class="swiper-container swiper-init demo-swiper demo-swiper-coverflow swiper-container-coverflow swiper-container-3d swiper-container-horizontal">
+                      
+                              <div class="swiper-wrapper" style=id="move">
+
+                                    <div id="img1" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img1a"></div><div class="swiper-slide-shadow-right" style=id="img1b"></div></div>
+                                    <div id="img2" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img2a"></div><div class="swiper-slide-shadow-right" style=id="img2b"></div></div>
+                                    <div id="img3" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img3a"></div><div class="swiper-slide-shadow-right" style=id="img3b"></div></div>
+                                    <div id="img4" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img4a"></div><div class="swiper-slide-shadow-right" style=id="img4b"></div></div>
+                                    <div id="img5" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img5a"></div><div class="swiper-slide-shadow-right" style=id="img5b"></div></div>
+                                    <div id="img6" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img6a"></div><div class="swiper-slide-shadow-right" style=id="img6b"></div></div>
+                                    <div id="img7" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img7a"></div><div class="swiper-slide-shadow-right" style=id="img7b"></div></div>
+                                    <div id="img8" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img8a"></div><div class="swiper-slide-shadow-right" style=id="img8"></div></div>
+                                    <div id="img9" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img9a"></div><div class="swiper-slide-shadow-right" style=id="img9b"></div></div>
+                                    <div id="img10" class="swiper-slide swiper-slide-active"><div class="swiper-slide-shadow-left" style=id="img10a"></div><div class="swiper-slide-shadow-right" style=id="img10b"></div></div>
+                             
+                                  </div>
+                                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+                                 <br>
+
+                </div>
+  
+            </div>
+        </div>
+      </div>
+    </div>
+     <script type="text/javascript">
+      
+ 
+
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+   
+</body>
+
+</html>

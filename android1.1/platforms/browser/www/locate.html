@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Debut</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $("button").click(function(){
+      $("#div3").fadeToggle("slow");
+      });
+      });
+  </script>
+</head>
+
+<style type="text/css">
+    
+
+
+
+#bdy {
+  /* The image used */
+  background-image: url("images/bg.jpg");
+
+  /* Add the blur effect */
+  
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+
+</style>
+
+<body id="bdy">
+    <div id="app">
+        <!-- Statusbar overlay -->
+        
+    
+        <!-- Your main view, should have "view-main" class -->
+            <!-- Initial Page, "data-name" contains page name -->
+            <div class="page">
+                <!-- Toolbar -->
+              <div class="navbar">
+                <div class="navbar-inner sliding">
+                <div class="left">
+                  <a href="/#/" class="link back">
+                  <i class="icon icon-back"></i>
+                  <span class="ios-only">Back</span>
+                  </a>
+                </div>
+                <div class="title">LOCATION</div>
+              </div>
+            </div>
+                <!-- Scrollable page content -->
+              
+
+                <div class="page-content" id="bdy">
+                  <br>
+                  <center> <img  src="images/h1.png" width="100%"  ></center>
+                     
+                      <div data-effect="flip" class="swiper-container swiper-init demo-swiper demo-swiper-cube">
+                            
+                            <div class="swiper-wrapper"><img src ="images/12.jpg" class="swiper-slide">
+                              <img src ="images/13.jpg" class="swiper-slide">
+                              <img src ="images/14.jpg" class="swiper-slide">
+                              <img src ="images/15.jpg" class="swiper-slide">
+                              <img src ="images/16.jpg" class="swiper-slide">
+                              <img src ="images/17.jpg" class="swiper-slide">
+                              <img src ="images/18.jpg" class="swiper-slide">
+                              <img src ="images/19.jpg" class="swiper-slide">
+                            </div>
+                      </div>
+                      <font color="white"><p align="center">~~FLIP IMAGE TO VIEW~~</p></font>
+                      <br>
+                      <font color="#85C1E9"><p align="center">DIRECTIONS</p></font>
+                            <img id="div3" src="images/map.jpg" width="100%"></div>
+                  </div>
+                </div>
+              </div>
+
+
+     <script type="text/javascript"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+   
+</body>
+
+</html> 
